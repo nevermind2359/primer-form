@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ГОРОД/БУДУЩЕЕ — форум городских практик, 24–25 октября 2026</title>
+<meta name="description" content="Открытый форум городских практик «Город/Будущее»: лекции, дискуссии, воркшопы. Регистрация участников и аккредитация СМИ.">
+<link rel="canonical" href="https://gorod-forum.ru/">
+
+<!-- Open Graph / Twitter -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="Форум «Город/Будущее»">
+<meta property="og:title" content="Город/Будущее — открытый форум городских практик">
+<meta property="og:description" content="24–25 октября 2026, Екатеринбург, «Дом Печати». Урбанистика, транспорт, экология, данные, сообщества, архитектура.">
+<meta property="og:url" content="https://gorod-forum.ru/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Город/Будущее — открытый форум городских практик">
+<meta name="twitter:description" content="24–25 октября 2026, Екатеринбург. Регистрация бесплатная.">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%23FAF7EF'/><text x='16' y='23' font-family='Georgia,serif' font-size='19' font-weight='700' text-anchor='middle' fill='%23BD2F1D'>Г</text></svg>">
+
+<script>
+(function(){
+  var d=document.documentElement;
+  d.className='js';
+  try{
+    var s=localStorage.getItem('gf_theme');
+    d.dataset.theme = s || ((window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches) ? 'night' : 'day');
+  }catch(e){ d.dataset.theme='day'; }
+})();
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Event",
+  "name":"Открытый форум городских практик «Город/Будущее»",
+  "description":"Два дня о том, как города становятся удобнее: практики, которые уже работают, и решения, которые войдут в жизнь завтра.",
+  "startDate":"2026-10-24T10:00+05:00",
+  "endDate":"2026-10-25T19:00+05:00",
+  "eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode",
+  "eventStatus":"https://schema.org/EventScheduled",
+  "inLanguage":"ru",
+  "location":{
+    "@type":"Place",
+    "name":"«Дом Печати»",
+    "address":{"@type":"PostalAddress","addressLocality":"Екатеринбург","addressCountry":"RU"}
+  },
+  "organizer":{"@type":"Organization","name":"Форум «Город/Будущее»","url":"https://gorod-forum.ru/"},
+  "offers":{
+    "@type":"Offer",
+    "price":"0",
+    "priceCurrency":"RUB",
+    "availability":"https://schema.org/InStock",
+    "url":"https://gorod-forum.ru/#register",
+    "validFrom":"2026-01-01T00:00+05:00"
+  }
+}
+</script>
+
+<style>
+:root{
+  --paper:#FAF7EF;
+  --ink:#161411;
+  --red:#BD2F1D;
+  --stone:#6B655C;
+  --line:rgba(22,20,17,.16);
+  --muted:#565049;
+  --ghost:rgba(22,20,17,.08);
+  --hover:rgba(22,20,17,.035);
+  --guide:rgba(22,20,17,.05);
+  --header-bg:rgba(250,247,239,.92);
+  --footer-bg:#161411;
+  --footer-text:#F3EEE5;
+  --band-bg:#161411;
+  --band-fg:#F3EEE5;
+  --serif:'Playfair Display',Georgia,serif;
+  --sans:'Manrope',-apple-system,'Segoe UI',sans-serif;
+  --ease:cubic-bezier(.86,0,.07,1);
+}
+[data-theme="night"]{
+  --paper:#16150F;
+  --ink:#F3EEE5;
+  --red:#E04A36;
+  --stone:#A79E90;
+  --line:rgba(243,238,229,.2);
+  --muted:#ada294;
+  --ghost:rgba(243,238,229,.1);
+  --hover:rgba(243,238,229,.06);
+  --guide:rgba(243,238,229,.05);
+  --header-bg:rgba(22,21,15,.9);
+  --footer-bg:#0C0B08;
+  --footer-text:#F3EEE5;
+  --band-bg:#0C0B08;
+  --band-fg:#F3EEE5;
+}
+html{background:var(--paper);scrollbar-gutter:stable}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{background:var(--paper);color:var(--ink);font-family:var(--sans);
+  font-size:16px;line-height:1.55;overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;transition:background .5s,color .5s}
+::selection{background:var(--red);color:var(--paper)}
+a{color:inherit}
+img{display:block;max-width:100%}
+button,input,select,textarea{font-family:inherit;font-size:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--red);outline-offset:3px}
+
+.skip{position:fixed;left:0;top:-100px;z-index:200;background:var(--ink);color:var(--paper);
+  padding:14px 22px;text-transform:uppercase;font-size:.74rem;font-weight:800;
+  letter-spacing:.12em;text-decoration:none;transition:top .2s}
+.skip:focus{top:0}
+
+.guides{position:fixed;inset:0;pointer-events:none;z-index:0;
+  max-width:1240px;margin:0 auto;display:flex;justify-content:space-between;padding:0 24px}
+.guides i{width:1px;background:var(--guide)}
+
+.hero,.marquee,.orn-band{position:relative;z-index:1}
+
+.header{position:fixed;top:0;left:0;right:0;z-index:60;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:16px 5vw;border-bottom:1px solid transparent;transition:.35s}
+.header.scrolled{background:var(--header-bg);backdrop-filter:blur(12px);
+  border-bottom-color:var(--line);padding:11px 5vw}
+.logo{font-family:var(--serif);font-weight:800;font-size:1.2rem;letter-spacing:.01em;
+  text-decoration:none;text-transform:uppercase}
+.logo span{color:var(--red)}
+.nav{display:flex;gap:30px;align-items:center}
+.u-link{position:relative;text-decoration:none;text-transform:uppercase;
+  font-size:.74rem;font-weight:700;letter-spacing:.12em;padding:4px 0}
+.u-link::after{content:"";position:absolute;left:0;bottom:0;height:1px;width:100%;
+  background:var(--ink);transform:scaleX(0);transform-origin:right;
+  transition:transform .7s var(--ease)}
+.u-link:hover::after{transform:scaleX(1);transform-origin:left}
+.btn{display:inline-block;text-decoration:none;text-transform:uppercase;
+  font-size:.74rem;font-weight:800;letter-spacing:.12em;
+  background:var(--ink);color:var(--paper);padding:13px 26px;border:1px solid var(--ink);
+  cursor:pointer;transition:background .3s,color .3s}
+.btn:hover{background:var(--red);border-color:var(--red);color:var(--paper)}
+.btn[disabled]{opacity:.6;cursor:wait}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:var(--paper)}
+.btn.red{background:var(--red);border-color:var(--red)}
+.btn.red:hover{background:var(--ink);border-color:var(--ink)}
+.burger{display:none;background:none;border:none;width:34px;height:26px;position:relative;z-index:70}
+.burger i{position:absolute;left:0;width:100%;height:2px;background:var(--ink);transition:.3s}
+.burger i:first-child{top:6px}.burger i:last-child{bottom:6px}
+body.menu-open .burger i:first-child{top:12px;transform:rotate(45deg)}
+body.menu-open .burger i:last-child{bottom:12px;transform:rotate(-45deg)}
+
+.theme-toggle{background:none;border:1px solid var(--ink);border-radius:999px;
+  width:58px;height:30px;position:relative;cursor:pointer;flex:none;
+  transition:border-color .3s;margin-right:14px}
+.theme-toggle .thumb{position:absolute;top:3px;left:3px;width:22px;height:22px;border-radius:50%;
+  background:var(--ink);display:flex;align-items:center;justify-content:center;
+  transition:transform .5s var(--ease),background .3s}
+[data-theme="night"] .theme-toggle .thumb{transform:translateX(28px)}
+.theme-toggle svg{width:13px;height:13px;stroke:var(--paper);fill:none;
+  stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;transition:stroke .3s}
+.theme-toggle .moon{display:none}
+[data-theme="night"] .theme-toggle .sun{display:none}
+[data-theme="night"] .theme-toggle .moon{display:block}
+
+.hero{min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;
+  padding:0 5vw 5vh}
+.hero-tag{margin-bottom:auto;padding-top:110px;display:flex;gap:14px;align-items:center;
+  text-transform:uppercase;font-size:.72rem;font-weight:700;letter-spacing:.18em;color:var(--stone)}
+.hero-tag::before{content:"";width:44px;height:1px;background:var(--red)}
+.hero h1{font-family:var(--serif);font-weight:800;text-transform:uppercase;
+  font-size:clamp(3rem,11vw,9.5rem);line-height:.98;letter-spacing:-.01em}
+.hero h1 .l{display:block;overflow:hidden}
+.hero h1 .l span{display:block;transform:translateY(110%);animation:rise 1s var(--ease) forwards}
+.hero h1 .l:nth-child(2) span{animation-delay:.12s}
+.hero h1 em{font-style:normal;color:var(--red)}
+@keyframes rise{to{transform:none}}
+.hero-meta{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;
+  flex-wrap:wrap;margin-top:5vh;border-top:1px solid var(--ink);padding-top:22px}
+.hero-facts{display:flex;gap:48px;flex-wrap:wrap}
+.hf b{display:block;font-family:var(--serif);font-size:1.5rem;font-weight:700}
+.hf small{text-transform:uppercase;font-size:.68rem;letter-spacing:.16em;color:var(--stone);font-weight:700}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap}
+
+.marquee{border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+  overflow:hidden;padding:14px 0;background:var(--band-bg);color:var(--band-fg)}
+.marquee-track{display:flex;gap:56px;white-space:nowrap;width:max-content;
+  padding-right:56px;
+  animation:mq 28s linear infinite;font-family:var(--serif);text-transform:uppercase;
+  font-size:1.05rem;letter-spacing:.06em}
+.marquee-track span::after{content:"•";color:var(--red);margin-left:56px}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+.section{position:relative;z-index:1;max-width:1240px;margin:0 auto;
+  padding:110px 24px;display:grid;grid-template-columns:minmax(220px,1fr) 2fr;gap:40px}
+.sec-head{position:sticky;top:110px;align-self:start}
+.sec-num{font-family:var(--serif);font-size:.95rem;font-weight:600;color:var(--red);
+  letter-spacing:.1em}
+.sec-title{font-family:var(--serif);font-weight:700;text-transform:uppercase;
+  font-size:clamp(1.9rem,3.4vw,3rem);line-height:1.05;letter-spacing:-.008em;margin-top:10px}
+.js .reveal{opacity:0;transform:translateY(46px);
+  transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.js .reveal.in{opacity:1;transform:none}
+.lead{font-size:clamp(1.15rem,1.7vw,1.5rem);line-height:1.5;font-weight:500;max-width:34ch}
+.body-text{color:var(--muted);max-width:62ch;margin-top:22px}
+.body-text p+p{margin-top:14px}
+
+.prog{border-top:1px solid var(--ink)}
+.prog-day{display:flex;justify-content:space-between;align-items:baseline;
+  padding:22px 0;border-bottom:1px solid var(--ink);font-family:var(--serif)}
+.prog-day b{font-size:1.4rem;font-weight:700;text-transform:uppercase}
+.prog-day span{font-size:.72rem;text-transform:uppercase;letter-spacing:.16em;color:var(--stone);font-family:var(--sans);font-weight:700}
+.slot{display:grid;grid-template-columns:110px 1fr auto;gap:20px;align-items:baseline;
+  padding:20px 0;border-bottom:1px solid var(--line);transition:background .3s,padding .3s}
+.slot:hover{background:var(--hover);padding-left:12px;padding-right:12px}
+.slot time{font-weight:800;font-size:.85rem;color:var(--red)}
+.slot h3{font-size:1.05rem;font-weight:700}
+.slot p{font-size:.86rem;color:var(--muted);margin-top:4px}
+.slot .tag{font-size:.64rem;text-transform:uppercase;letter-spacing:.14em;font-weight:800;
+  border:1px solid var(--ink);padding:5px 10px;white-space:nowrap}
+.slot .tag.media{border-color:var(--red);color:var(--red)}
+
+.speakers{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);
+  border:1px solid var(--line)}
+.sp{background:var(--paper);padding:28px 24px 30px;position:relative;overflow:hidden}
+.sp::after{content:"";position:absolute;left:0;bottom:0;height:3px;width:100%;
+  background:var(--red);transform:scaleX(0);transform-origin:left;transition:transform .6s var(--ease)}
+.sp:hover::after{transform:scaleX(1)}
+.sp .role{font-size:.66rem;text-transform:uppercase;letter-spacing:.16em;color:var(--stone);font-weight:800}
+.sp h3{font-family:var(--serif);font-size:1.35rem;font-weight:700;margin:12px 0 8px;line-height:1.15}
+.sp p{font-size:.86rem;color:var(--muted)}
+.sp .initials{font-family:var(--serif);font-size:3.4rem;font-weight:800;color:var(--ghost);
+  position:absolute;top:12px;right:16px;line-height:1}
+
+.forms-wrap{border:1px solid var(--ink);background:var(--paper);position:relative;transition:background .5s,border-color .5s}
+.form-tabs{display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid var(--ink)}
+.form-tab{background:none;border:none;padding:20px 18px;cursor:pointer;
+  font-family:var(--serif);font-size:1.15rem;font-weight:700;text-transform:uppercase;
+  color:var(--stone);position:relative;transition:color .3s,background .3s}
+.form-tab+.form-tab{border-left:1px solid var(--ink)}
+.form-tab::after{content:"";position:absolute;left:0;bottom:-1px;height:3px;width:100%;
+  background:var(--red);transform:scaleX(0);transform-origin:left;transition:transform .5s var(--ease)}
+.form-tab.active{color:var(--ink)}
+.form-tab.active::after{transform:scaleX(1)}
+.form-pane{padding:36px 32px 40px;display:none}
+.form-pane.active{display:block;animation:fade .5s var(--ease)}
+@keyframes fade{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.pane-note{font-size:.84rem;color:var(--muted);margin-bottom:26px;max-width:56ch}
+.f-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px 20px}
+.field{display:flex;flex-direction:column;gap:7px}
+.field.full{grid-column:1/-1}
+.field label{font-size:.68rem;text-transform:uppercase;letter-spacing:.14em;font-weight:800}
+.field label i{color:var(--red);font-style:normal}
+.field input,.field select,.field textarea{
+  background:transparent;border:none;border-bottom:1px solid var(--line);
+  padding:10px 2px;font-size:1rem;border-radius:0;transition:border-color .3s;appearance:none}
+.field select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23161411' fill='none' stroke-width='1.5'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:right 4px center;cursor:pointer}
+[data-theme="night"] .field select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23F3EEE5' fill='none' stroke-width='1.5'/%3E%3C/svg%3E")}
+.field textarea{resize:vertical;min-height:74px}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-bottom-color:var(--ink)}
+.field.error input,.field.error select,.field.error textarea{border-bottom-color:var(--red)}
+.f-err{font-size:.72rem;color:var(--red);font-weight:600;display:none}
+.field.error .f-err{display:block}
+.f-foot{grid-column:1/-1;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;margin-top:8px}
+.agree{display:flex;gap:10px;align-items:flex-start;font-size:.78rem;color:var(--muted);max-width:46ch;cursor:pointer}
+.agree.error{color:var(--red)}
+.agree input{margin-top:3px;accent-color:var(--red);width:15px;height:15px;flex:none}
+
+.hp{position:absolute!important;left:-9999px!important;top:auto;width:1px;height:1px;overflow:hidden}
+
+.orn-band{height:30px;background:var(--red);opacity:.85;
+  -webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30'%3E%3Cpath d='M15 1l14 14-14 14L1 15z' fill='none' stroke='black' stroke-width='2'/%3E%3Cpath d='M15 8l7 7-7 7-7-7z' fill='black'/%3E%3C/svg%3E") center/auto 30px repeat-x;
+  mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30'%3E%3Cpath d='M15 1l14 14-14 14L1 15z' fill='none' stroke='black' stroke-width='2'/%3E%3Cpath d='M15 8l7 7-7 7-7-7z' fill='black'/%3E%3C/svg%3E") center/auto 30px repeat-x}
+.orn-zig{height:16px;background:var(--red);opacity:.85;
+  -webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='16'%3E%3Cpath d='M0 14L6 2l6 12 6-12 6 12' fill='none' stroke='black' stroke-width='2.4'/%3E%3C/svg%3E") center/auto 16px repeat-x;
+  mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='16'%3E%3Cpath d='M0 14L6 2l6 12 6-12 6 12' fill='none' stroke='black' stroke-width='2.4'/%3E%3C/svg%3E") center/auto 16px repeat-x}
+.orn-corner{position:absolute;width:34px;height:34px;color:var(--red);pointer-events:none}
+.orn-corner.tl{top:8px;left:8px}
+.orn-corner.tr{top:8px;right:8px;transform:scaleX(-1)}
+.orn-corner.bl{bottom:8px;left:8px;transform:scaleY(-1)}
+.orn-corner.br{bottom:8px;right:8px;transform:scale(-1)}
+.hero-orn{position:absolute;right:5vw;top:50%;transform:translateY(-50%);
+  width:9px;height:min(52vh,420px);background:var(--red);opacity:.8;
+  -webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30'%3E%3Cpath d='M15 1l14 14-14 14L1 15z' fill='none' stroke='black' stroke-width='2'/%3E%3Cpath d='M15 8l7 7-7 7-7-7z' fill='black'/%3E%3C/svg%3E") center/30px 30px repeat-y;
+  mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30'%3E%3Cpath d='M15 1l14 14-14 14L1 15z' fill='none' stroke='black' stroke-width='2'/%3E%3Cpath d='M15 8l7 7-7 7-7-7z' fill='black'/%3E%3C/svg%3E") center/30px 30px repeat-y}
+
+.modal-overlay{position:fixed;inset:0;z-index:100;background:rgba(12,11,8,.55);
+  backdrop-filter:blur(6px);display:none;align-items:center;justify-content:center;padding:20px}
+.modal-overlay.show{display:flex;animation:fade .35s var(--ease)}
+.modal{position:relative;background:var(--paper);color:var(--ink);border:1px solid var(--ink);
+  max-width:520px;width:100%;padding:52px 44px 44px;text-align:center;
+  box-shadow:0 30px 80px rgba(12,11,8,.35);transition:background .5s,color .5s;
+  animation:modalIn .5s var(--ease)}
+@keyframes modalIn{from{opacity:0;transform:translateY(26px) scale(.97)}to{opacity:1;transform:none}}
+.modal::before{content:"";position:absolute;top:0;left:0;right:0;height:14px;background:var(--red);
+  -webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30'%3E%3Cpath d='M15 1l14 14-14 14L1 15z' fill='none' stroke='black' stroke-width='2'/%3E%3Cpath d='M15 8l7 7-7 7-7-7z' fill='black'/%3E%3C/svg%3E") center/auto 14px repeat-x;
+  mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30'%3E%3Cpath d='M15 1l14 14-14 14L1 15z' fill='none' stroke='black' stroke-width='2'/%3E%3Cpath d='M15 8l7 7-7 7-7-7z' fill='black'/%3E%3C/svg%3E") center/auto 14px repeat-x}
+.modal .num{font-family:var(--serif);font-size:.9rem;color:var(--red);letter-spacing:.1em;font-weight:600}
+.modal h2{font-family:var(--serif);font-size:1.9rem;font-weight:700;text-transform:uppercase;margin:14px 0 12px;line-height:1.1}
+.modal p{color:var(--muted);font-size:.95rem}
+.modal .btn{margin-top:28px}
+.modal-close{position:absolute;top:16px;right:16px;background:none;border:none;cursor:pointer;
+  width:32px;height:32px;display:flex;align-items:center;justify-content:center}
+.modal-close svg{width:16px;height:16px;stroke:var(--ink);stroke-width:2;stroke-linecap:round;transition:transform .3s var(--ease)}
+.modal-close:hover svg{transform:rotate(90deg)}
+
+.counter-note{margin-top:26px;font-size:.72rem;text-transform:uppercase;letter-spacing:.14em;
+  color:var(--stone);font-weight:700;text-align:right}
+.counter-note b{color:var(--red)}
+
+footer{background:var(--footer-bg);color:var(--footer-text);position:relative;z-index:1;transition:background .5s}
+.foot-inner{max-width:1240px;margin:0 auto;padding:90px 24px 40px}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;padding-bottom:60px;border-bottom:1px solid rgba(243,238,229,.18)}
+.foot-grid h2{font-family:var(--serif);font-size:clamp(2rem,4vw,3.2rem);font-weight:700;
+  text-transform:uppercase;line-height:1.05}
+.foot-grid h2 span{color:var(--red)}
+.fcol h4{font-size:.68rem;text-transform:uppercase;letter-spacing:.16em;color:#A79E90;font-weight:800;margin-bottom:16px}
+.fcol a{display:block;text-decoration:none;padding:5px 0;font-size:.95rem;
+  width:max-content;position:relative}
+.fcol a::after{content:"";position:absolute;left:0;bottom:2px;height:1px;width:100%;
+  background:var(--footer-text);transform:scaleX(0);transform-origin:right;transition:transform .6s var(--ease)}
+.fcol a:hover::after{transform:scaleX(1);transform-origin:left}
+.foot-bottom{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
+  padding-top:26px;font-size:.72rem;color:#A79E90;text-transform:uppercase;letter-spacing:.12em}
+
+@media(max-width:900px){
+  .hero-orn{display:none}
+  .modal{padding:48px 26px 34px}
+  .section{grid-template-columns:1fr;padding:80px 20px}
+  .sec-head{position:static}
+  .speakers{grid-template-columns:1fr}
+  .slot{grid-template-columns:70px 1fr;gap:8px 16px}
+  .slot .tag{grid-column:2;justify-self:start;margin-top:6px}
+  .f-grid{grid-template-columns:1fr}
+  .form-tabs{grid-template-columns:1fr}
+  .form-tab+.form-tab{border-left:none;border-top:1px solid var(--ink)}
+  .foot-grid{grid-template-columns:1fr}
+  .nav{position:fixed;inset:0;background:var(--paper);flex-direction:column;
+    justify-content:center;gap:34px;transform:translateY(-100%);transition:transform .5s var(--ease)}
+  .nav .u-link{font-size:1.2rem}
+  body.menu-open .nav{transform:none}
+  .burger{display:block}
+  .nav .btn{font-size:1rem}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}
+  html{scroll-behavior:auto}
+  .js .reveal{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<a class="skip" href="#main">К содержанию</a>
+
+<div class="guides" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+
+<header class="header" id="header">
+  <a class="logo" href="#top">Город<span>/</span>Будущее</a>
+  <div style="display:flex;align-items:center;position:relative;z-index:70">
+    <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false" aria-label="Переключить тему">
+      <span class="thumb">
+        <svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M2.5 12h2.4M19.1 12h2.4M5 5l1.7 1.7M17.3 17.3 19 19M19 5l-1.7 1.7M6.7 17.3 5 19"/></svg>
+        <svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 13.6A8.2 8.2 0 1 1 10.4 4 6.6 6.6 0 0 0 20 13.6z"/></svg>
+      </span>
+    </button>
+    <button class="burger" id="burger" type="button" aria-label="Меню" aria-expanded="false" aria-controls="nav"><i></i><i></i></button>
+  </div>
+  <nav class="nav" id="nav">
+    <a class="u-link" href="#about">О форуме</a>
+    <a class="u-link" href="#program">Программа</a>
+    <a class="u-link" href="#speakers">Спикеры</a>
+    <a class="u-link" href="#contacts">Контакты</a>
+    <a class="btn red" href="#register">Регистрация</a>
+  </nav>
+</header>
+
+<main id="main" tabindex="-1">
+
+<section class="hero" id="top">
+  <div class="hero-orn" aria-hidden="true"></div>
+  <div class="hero-tag">Открытый форум городских практик · 3-й сезон</div>
+  <h1>
+    <span class="l"><span>Город</span></span>
+    <span class="l"><span><em>/</em>Будущее</span></span>
+  </h1>
+  <div class="hero-meta">
+    <div class="hero-facts">
+      <div class="hf"><b>24–25 октября</b><small>даты</small></div>
+      <div class="hf"><b>Екатеринбург</b><small>«Дом Печати»</small></div>
+      <div class="hf"><b>1200+</b><small>участников</small></div>
+      <div class="hf"><b>40</b><small>спикеров</small></div>
+    </div>
+    <div class="hero-cta">
+      <a class="btn" href="#register" data-form="participant">Стать участником</a>
+      <a class="btn ghost" href="#register" data-form="media">Аккредитация СМИ</a>
+    </div>
+  </div>
+</section>
+
+<div class="orn-band" aria-hidden="true"></div>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track" id="mq">
+    <span>Урбанистика</span><span>Транспорт</span><span>Экология</span><span>Данные</span><span>Сообщества</span><span>Архитектура</span>
+  </div>
+</div>
+
+<section class="section" id="about">
+  <div class="sec-head reveal">
+    <div class="sec-num">01</div>
+    <h2 class="sec-title">О форуме</h2>
+  </div>
+  <div>
+    <p class="lead reveal">Два дня о том, как города становятся удобнее: практики, которые уже работают, и решения, которые войдут в жизнь завтра.</p>
+    <div class="body-text reveal">
+      <p>«Город/Будущее» объединяет урбанистов, архитекторов, представителей администраций, активистов и бизнес. В программе — пленарная дискуссия, шесть тематических треков, воркшопы и ярмарка городских инициатив.</p>
+      <p>Участие бесплатное по регистрации. Для представителей прессы, блогеров и фотографов действует отдельная аккредитация СМИ — она открывает доступ к пресс-центру, брифингам и закрытым интервью со спикерами.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="program">
+  <div class="sec-head reveal">
+    <div class="sec-num">02</div>
+    <h2 class="sec-title">Программа</h2>
+  </div>
+  <div class="reveal">
+    <div class="prog">
+      <div class="prog-day"><b>День 1</b><span>24 октября, пт</span></div>
+      <div class="slot"><time>10:00</time><div><h3>Открытие. Пленарная дискуссия «Город как сервис»</h3><p>Большой зал · модератор — главный редактор «Городских проектов»</p></div><span class="tag">Пленарка</span></div>
+      <div class="slot"><time>12:00</time><div><h3>Трек «Транспорт»: 15-минутный город на практике</h3><p>Зал 2 · разбор кейсов трёх городов</p></div><span class="tag">Трек</span></div>
+      <div class="slot"><time>14:00</time><div><h3>Пресс-брифинг для аккредитованных СМИ</h3><p>Пресс-центр · оргкомитет и ключевые спикеры</p></div><span class="tag media">Для СМИ</span></div>
+      <div class="slot"><time>16:00</time><div><h3>Воркшоп: данные города для активистов</h3><p>Мастерская · ноутбук при себе, запись по регистрации</p></div><span class="tag">Воркшоп</span></div>
+    </div>
+    <div class="prog">
+      <div class="prog-day"><b>День 2</b><span>25 октября, сб</span></div>
+      <div class="slot"><time>11:00</time><div><h3>Трек «Экология»: зелёный каркас и набережные</h3><p>Зал 1 · дискуссия и открытый микрофон</p></div><span class="tag">Трек</span></div>
+      <div class="slot"><time>13:00</time><div><h3>Ярмарка городских инициатив</h3><p>Фойе · 30 проектов, нетворкинг</p></div><span class="tag">Ярмарка</span></div>
+      <div class="slot"><time>17:00</time><div><h3>Закрытие. Итоги и резолюция форума</h3><p>Большой зал</p></div><span class="tag">Финал</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="speakers">
+  <div class="sec-head reveal">
+    <div class="sec-num">03</div>
+    <h2 class="sec-title">Спикеры</h2>
+  </div>
+  <div class="speakers reveal">
+    <div class="sp"><span class="initials" aria-hidden="true">АК</span><div class="role">Урбанистика</div><h3>Анна Ковалёва</h3><p>Руководитель бюро «Проект Город», автор программы развития общественных пространств.</p></div>
+    <div class="sp"><span class="initials" aria-hidden="true">МС</span><div class="role">Транспорт</div><h3>Марат Сабиров</h3><p>Транспортный планировщик, консультант проектов БРТ в России и Казахстане.</p></div>
+    <div class="sp"><span class="initials" aria-hidden="true">ОЛ</span><div class="role">Экология</div><h3>Ольга Литвин</h3><p>Ландшафтный архитектор, сооснователь фонда «Зелёный каркас».</p></div>
+    <div class="sp"><span class="initials" aria-hidden="true">ДВ</span><div class="role">Данные</div><h3>Денис Ветров</h3><p>Руководитель аналитики открытых данных, лектор Школы данных.</p></div>
+    <div class="sp"><span class="initials" aria-hidden="true">ЕГ</span><div class="role">Сообщества</div><h3>Елена Грант</h3><p>Куратор программ соучаствующего проектирования, фасилитатор.</p></div>
+    <div class="sp"><span class="initials" aria-hidden="true">ИП</span><div class="role">Архитектура</div><h3>Игорь Панин</h3><p>Главный архитектор мастер-планов трёх городов-миллионников.</p></div>
+  </div>
+</section>
+
+<section class="section" id="register">
+  <div class="sec-head reveal">
+    <div class="sec-num">04</div>
+    <h2 class="sec-title">Регистрация</h2>
+    <div class="orn-zig" style="margin-top:18px;max-width:180px" aria-hidden="true"></div>
+  </div>
+  <div class="reveal">
+    <div class="forms-wrap">
+      <svg class="orn-corner tl" viewBox="0 0 34 34" aria-hidden="true"><path d="M2 32V12Q2 2 12 2h20" fill="none" stroke="currentColor" stroke-width="2"/><path d="M9 32V16Q9 9 16 9h16" fill="none" stroke="currentColor" stroke-width="2" opacity=".45"/><path d="M16 24l4 4-4 4-4-4z" fill="currentColor"/></svg>
+      <svg class="orn-corner tr" viewBox="0 0 34 34" aria-hidden="true"><path d="M2 32V12Q2 2 12 2h20" fill="none" stroke="currentColor" stroke-width="2"/><path d="M9 32V16Q9 9 16 9h16" fill="none" stroke="currentColor" stroke-width="2" opacity=".45"/><path d="M16 24l4 4-4 4-4-4z" fill="currentColor"/></svg>
+      <svg class="orn-corner bl" viewBox="0 0 34 34" aria-hidden="true"><path d="M2 32V12Q2 2 12 2h20" fill="none" stroke="currentColor" stroke-width="2"/><path d="M9 32V16Q9 9 16 9h16" fill="none" stroke="currentColor" stroke-width="2" opacity=".45"/><path d="M16 24l4 4-4 4-4-4z" fill="currentColor"/></svg>
+      <svg class="orn-corner br" viewBox="0 0 34 34" aria-hidden="true"><path d="M2 32V12Q2 2 12 2h20" fill="none" stroke="currentColor" stroke-width="2"/><path d="M9 32V16Q9 9 16 9h16" fill="none" stroke="currentColor" stroke-width="2" opacity=".45"/><path d="M16 24l4 4-4 4-4-4z" fill="currentColor"/></svg>
+      <div class="form-tabs" role="tablist">
+        <button class="form-tab active" id="tab-participant" type="button" role="tab" aria-selected="true" aria-controls="form-participant">Участнику</button>
+        <button class="form-tab" id="tab-media" type="button" role="tab" aria-selected="false" aria-controls="form-media">Аккредитация СМИ</button>
+      </div>
+
+      <form class="form-pane active" id="form-participant" novalidate>
+        <p class="pane-note">Регистрация участника бесплатна. На указанную почту придёт письмо с именным бейджем и QR-кодом для входа.</p>
+        <div class="f-grid">
+          <div class="field"><label for="p-name">ФИО <i>*</i></label><input id="p-name" name="name" type="text" autocomplete="name" required><span class="f-err">Укажите имя и фамилию</span></div>
+          <div class="field"><label for="p-email">Email <i>*</i></label><input id="p-email" name="email" type="email" autocomplete="email" required><span class="f-err">Проверьте адрес почты</span></div>
+          <div class="field"><label for="p-phone">Телефон <i>*</i></label><input id="p-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+7 ___ ___-__-__" required><span class="f-err">Укажите корректный телефон</span></div>
+          <div class="field"><label for="p-city">Город</label><input id="p-city" name="city" type="text" autocomplete="address-level2"></div>
+          <div class="field"><label for="p-org">Организация</label><input id="p-org" name="org" type="text" autocomplete="organization"></div>
+          <div class="field"><label for="p-role">Вы участвуете как <i>*</i></label>
+            <select id="p-role" name="role" required>
+              <option value="">— выберите —</option>
+              <option>Представитель администрации</option>
+              <option>Урбанист / архитектор</option>
+              <option>Активист / житель</option>
+              <option>Студент</option>
+              <option>Бизнес</option>
+              <option>Другое</option>
+            </select><span class="f-err">Выберите вариант</span></div>
+          <div class="field full"><label for="p-days">Дни участия <i>*</i></label>
+            <select id="p-days" name="days" required>
+              <option value="">— выберите —</option>
+              <option>24 октября</option>
+              <option>25 октября</option>
+              <option>Оба дня</option>
+            </select><span class="f-err">Выберите дни</span></div>
+          <div class="hp" aria-hidden="true"><label for="p-website">Не заполняйте это поле</label><input id="p-website" type="text" name="website" tabindex="-1" autocomplete="off"></div>
+          <div class="f-foot">
+            <label class="agree" for="p-agree"><input type="checkbox" id="p-agree">Соглашаюсь с обработкой персональных данных и правилами форума</label>
+            <button class="btn red" type="submit">Зарегистрироваться</button>
+          </div>
+        </div>
+      </form>
+
+      <form class="form-pane" id="form-media" novalidate>
+        <p class="pane-note">Аккредитация открыта для редакций СМИ, блогеров, фото- и видеосъёмщиков. Заявки рассматриваются в течение 2 рабочих дней.</p>
+        <div class="f-grid">
+          <div class="field"><label for="m-name">ФИО <i>*</i></label><input id="m-name" name="name" type="text" autocomplete="name" required><span class="f-err">Укажите имя и фамилию</span></div>
+          <div class="field"><label for="m-email">Email <i>*</i></label><input id="m-email" name="email" type="email" autocomplete="email" required><span class="f-err">Проверьте адрес почты</span></div>
+          <div class="field"><label for="m-media">Издание / канал <i>*</i></label><input id="m-media" name="media" type="text" required><span class="f-err">Укажите название</span></div>
+          <div class="field"><label for="m-position">Должность <i>*</i></label>
+            <select id="m-position" name="position" required>
+              <option value="">— выберите —</option>
+              <option>Корреспондент / редактор</option>
+              <option>Фотограф</option>
+              <option>Оператор / видео</option>
+              <option>Блогер / автор канала</option>
+              <option>Другое</option>
+            </select><span class="f-err">Выберите вариант</span></div>
+          <div class="field full"><label for="m-link">Ссылка на издание или портфолио <i>*</i></label><input id="m-link" name="link" type="url" inputmode="url" placeholder="https://" required><span class="f-err">Нужна корректная ссылка</span></div>
+          <div class="field full"><label for="m-topic">Планируемый материал</label><textarea id="m-topic" name="topic" placeholder="Формат и тема публикации"></textarea></div>
+          <div class="hp" aria-hidden="true"><label for="m-website">Не заполняйте это поле</label><input id="m-website" type="text" name="website" tabindex="-1" autocomplete="off"></div>
+          <div class="f-foot">
+            <label class="agree" for="m-agree"><input type="checkbox" id="m-agree">Соглашаюсь с правилами аккредитации и обработкой персональных данных</label>
+            <button class="btn red" type="submit">Отправить заявку</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="counter-note">Уже зарегистрировалось на этом устройстве: <b id="reg-count">0</b></div>
+  </div>
+</section>
+
+</main>
+
+<div class="orn-band" aria-hidden="true"></div>
+
+<footer id="contacts">
+  <div class="foot-inner">
+    <div class="foot-grid">
+      <h2>Остались<br>вопросы<span>?</span></h2>
+      <div class="fcol">
+        <h4>Оргкомитет</h4>
+        <a href="mailto:hello@gorod-forum.ru">hello@gorod-forum.ru</a>
+        <a href="tel:+73430000000">+7 343 000-00-00</a>
+        <a href="#"></a>
+      </div>
+      <div class="fcol">
+        <h4>Пресс-служба</h4>
+        <a href="mailto:press@gorod-forum.ru">press@gorod-forum.ru</a>
+        <a href="#register" data-form="media">Аккредитация СМИ</a>
+        <a href="#">Пресс-кит (PDF)</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© Форум «Город/Будущее», 2026</span>
+      <span>
+    </div>
+  </div>
+</footer>
+
+<div class="modal-overlay" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-describedby="modal-text">
+  <div class="modal">
+    <button class="modal-close" id="modal-close" type="button" aria-label="Закрыть">
+      <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M1 1l14 14M15 1L1 15"/></svg>
+    </button>
+    <div class="num" id="modal-num"></div>
+    <h2 id="modal-title"></h2>
+    <p id="modal-text"></p>
+    <button class="btn" id="modal-again" type="button">Понятно</button>
+  </div>
+</div>
+
+<script>
+'use strict';
+
+(function(){
+
+  const LS = {
+    get(k){ try { return localStorage.getItem(k); } catch(e){ return null; } },
+    set(k,v){ try { localStorage.setItem(k,v); } catch(e){} }
+  };
+
+  /* ==================== theme ==================== */
+  const root = document.documentElement;
+  const themeBtn = document.getElementById('theme-toggle');
+
+  function syncThemeBtn(){
+    const night = root.dataset.theme === 'night';
+    themeBtn.setAttribute('aria-pressed', String(night));
+    themeBtn.setAttribute('aria-label', night ? 'Включить светлую тему' : 'Включить тёмную тему');
+  }
+  syncThemeBtn();
+
+  themeBtn.addEventListener('click', () => {
+    const next = root.dataset.theme === 'night' ? 'day' : 'night';
+    root.dataset.theme = next;
+    LS.set('gf_theme', next);
+    syncThemeBtn();
+  });
+
+  /* ==================== header / burger ==================== */
+  const header = document.getElementById('header');
+  addEventListener('scroll', () => header.classList.toggle('scrolled', scrollY > 40), { passive:true });
+
+  const burger = document.getElementById('burger');
+  burger.addEventListener('click', () => {
+    const open = document.body.classList.toggle('menu-open');
+    burger.setAttribute('aria-expanded', String(open));
+  });
+  document.querySelectorAll('.nav a').forEach(a => a.addEventListener('click', () => {
+    document.body.classList.remove('menu-open');
+    burger.setAttribute('aria-expanded','false');
+  }));
+
+  /* ==================== marquee ==================== */
+  const mq = document.getElementById('mq');
+  if (mq) mq.innerHTML += mq.innerHTML;
+
+  /* ==================== scroll reveal ==================== */
+  const revealEls = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+    }), { threshold:.12 });
+    revealEls.forEach(el => io.observe(el));
+  } else {
+    revealEls.forEach(el => el.classList.add('in'));
+  }
+
+  /* ==================== form tabs ==================== */
+  const tabs = {
+    participant: document.getElementById('tab-participant'),
+    media: document.getElementById('tab-media')
+  };
+  const panes = {
+    participant: document.getElementById('form-participant'),
+    media: document.getElementById('form-media')
+  };
+
+  function showForm(kind){
+    Object.keys(tabs).forEach(k => {
+      const on = k === kind;
+      tabs[k].classList.toggle('active', on);
+      tabs[k].setAttribute('aria-selected', String(on));
+      panes[k].classList.toggle('active', on);
+    });
+  }
+  tabs.participant.addEventListener('click', () => showForm('participant'));
+  tabs.media.addEventListener('click', () => showForm('media'));
+  document.querySelectorAll('[data-form]').forEach(el =>
+    el.addEventListener('click', () => showForm(el.dataset.form))
+  );
+
+  /* ==================== modal ==================== */
+  const modal = document.getElementById('modal');
+  const modalClose = document.getElementById('modal-close');
+  let lastFocused = null;
+
+  function openModal(num, title, text){
+    lastFocused = document.activeElement;
+    document.getElementById('modal-num').textContent = num;
+    document.getElementById('modal-title').textContent = title;
+    document.getElementById('modal-text').innerHTML = text;
+    modal.classList.add('show');
+    document.body.style.overflow = 'hidden';
+    modalClose.focus();
+  }
+  function closeModal(){
+    if (!modal.classList.contains('show')) return;
+    modal.classList.remove('show');
+    document.body.style.overflow = '';
+    if (lastFocused && typeof lastFocused.focus === 'function') lastFocused.focus();
+  }
+  modalClose.addEventListener('click', closeModal);
+  modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
+  document.getElementById('modal-again').addEventListener('click', closeModal);
+
+  addEventListener('keydown', e => {
+    if (!modal.classList.contains('show')) return;
+    if (e.key === 'Escape') { e.preventDefault(); closeModal(); return; }
+    if (e.key !== 'Tab') return;
+
+    const focusables = modal.querySelectorAll(
+      'button:not([disabled]), a[href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])'
+    );
+    if (!focusables.length) return;
+    const first = focusables[0];
+    const last  = focusables[focusables.length - 1];
+
+    if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+    else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+  });
+
+  /* ==================== storage ==================== */
+  let store = [];
+  try { store = JSON.parse(LS.get('gf_regs') || '[]'); } catch(e){ store = []; }
+  if (!Array.isArray(store)) store = [];
+
+  const countEl = document.getElementById('reg-count');
+  const updCount = () => { countEl.textContent = store.length; };
+  updCount();
+
+  /* ==================== Telegram ==================== */
+  const TG_TOKEN = '8715007915:AAFqcBbHost-XMPgE9JY6WDCyytQ16W_J1M';
+  const TG_CHAT  = '5788884338';
+  const TG_LIMIT = 3800;
+  const TG_TIMEOUT = 8000;
+
+  const esc = s => String(s == null ? '—' : s)
+    .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+
+  async function sendToTelegram(d){
+    if (!TG_TOKEN || !TG_CHAT) return { ok:false, reason:'not-configured' };
+
+    const lines = [
+      `<b>Новая заявка: ${d.kind === 'media' ? 'аккредитация СМИ' : 'участник'}</b>`,
+      `Номер: <b>${esc(d.ticket)}</b>`
+    ];
+    for (const [k,v] of Object.entries(d)){
+      if (['kind','ts','ticket'].includes(k)) continue;
+      lines.push(`${esc(k)}: ${esc(v)}`);
+    }
+    lines.push(`Время: ${new Date(d.ts).toLocaleString('ru-RU')}`);
+
+    let text = lines.join('\n');
+    if (text.length > TG_LIMIT) text = text.slice(0, TG_LIMIT - 3) + '...';
+
+    const ctrl = new AbortController();
+    const timer = setTimeout(() => ctrl.abort(), TG_TIMEOUT);
+
+    try{
+      const res = await fetch(`https://api.telegram.org/bot${TG_TOKEN}/sendMessage`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ chat_id: TG_CHAT, text, parse_mode: 'HTML' }),
+        signal: ctrl.signal
+      });
+      clearTimeout(timer);
+      const json = await res.json().catch(() => ({}));
+      if (!res.ok || !json.ok){
+        console.warn('Telegram error:', json.description || res.status);
+        return { ok:false, reason: json.description || ('HTTP ' + res.status) };
+      }
+      return { ok:true };
+    } catch(err){
+      clearTimeout(timer);
+      console.warn('Telegram:', err.message || err);
+      return { ok:false, reason: err.name === 'AbortError' ? 'timeout' : (err.message || 'network') };
+    }
+  }
+
+  /* ==================== validation ==================== */
+  const fieldOf = input => input.closest('.field');
+
+  function validate(form){
+    let ok = true;
+    form.querySelectorAll('input[required], select[required], textarea[required]').forEach(inp => {
+      const f = fieldOf(inp);
+      const v = inp.value.trim();
+      let valid = v.length > 0;
+
+      if (valid && inp.type === 'email')
+        valid = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v);
+      if (valid && inp.type === 'url')
+        valid = /^https?:\/\/[^\s.]+\.[^\s]+$/.test(v);
+      if (valid && inp.type === 'tel'){
+        const digits = v.replace(/\D/g, '');
+        valid = digits.length >= 10 && /^[0-9()+\s-]+$/.test(v);
+      }
+
+      if (f) f.classList.toggle('error', !valid);
+      if (!valid) ok = false;
+    });
+    return ok;
+  }
+
+  function resetForm(form){
+    form.reset();
+    form.querySelectorAll('.field.error').forEach(f => f.classList.remove('error'));
+    const agree = form.querySelector('.agree');
+    if (agree) agree.classList.remove('error');
+  }
+
+  /* ==================== submit ==================== */
+  function bindForm(kind, agreeId, prefix, modalText){
+    const form = panes[kind];
+    const agree = document.getElementById(agreeId);
+    const agreeWrap = agree.closest('.agree');
+    const submitBtn = form.querySelector('button[type="submit"]');
+    const submitLabel = submitBtn.textContent;
+
+    form.querySelectorAll('input, select, textarea').forEach(i => {
+      i.addEventListener('input', () => {
+        const f = fieldOf(i);
+        if (f) f.classList.remove('error');
+        if (i === agree && agree.checked) agreeWrap.classList.remove('error');
+      });
+      i.addEventListener('change', () => {
+        if (i === agree && agree.checked) agreeWrap.classList.remove('error');
+      });
+    });
+
+    form.addEventListener('submit', async e => {
+      e.preventDefault();
+      if (submitBtn.disabled) return;
+
+      const hp = form.querySelector('.hp input');
+      if (hp && hp.value.trim()) return;
+
+      const valid = validate(form);
+      agreeWrap.classList.toggle('error', !agree.checked);
+
+      if (!valid || !agree.checked){
+        const firstBad = form.querySelector('.field.error input, .field.error select, .field.error textarea');
+        if (firstBad) firstBad.focus();
+        else if (!agree.checked) agree.focus();
+        return;
+      }
+
+      const data = Object.fromEntries(new FormData(form).entries());
+      form.querySelectorAll('.hp input').forEach(hpInput => { delete data[hpInput.name]; });
+
+      data.kind = kind;
+      data.ts = new Date().toISOString();
+      data.ticket = prefix + '-' + String(Math.floor(1000 + Math.random() * 9000));
+
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Отправка…';
+
+      const result = await sendToTelegram(data);
+
+      store.push(data);
+      LS.set('gf_regs', JSON.stringify(store));
+      updCount();
+
+      submitBtn.disabled = false;
+      submitBtn.textContent = submitLabel;
+
+      const num   = kind === 'media' ? 'Заявка на аккредитацию отправлена' : 'Заявка принята';
+      const title = kind === 'media' ? 'Ждите ответа пресс-службы' : 'До встречи на форуме';
+      let text = modalText.replace('%TICKET%', data.ticket);
+
+      if (!result.ok){
+        text += '<br><br><small style="opacity:.7">Не удалось уведомить оргкомитет автоматически. Если ответ не придёт в течение дня — напишите на hello@gorod-forum.ru.</small>';
+      }
+
+      openModal(num, title, text);
+      resetForm(form);
+    });
+  }
+
+  bindForm('participant','p-agree','УЧ',
+    'Ваш номер регистрации: <b>%TICKET%</b>. Сохраните его — он понадобится на входе. Письмо-подтверждение уже летит на почту.');
+  bindForm('media','m-agree','СМИ',
+    'Номер заявки: <b>%TICKET%</b>. Решение придёт на почту в течение двух рабочих дней. По срочным вопросам — press@gorod-forum.ru.');
+
+})();
+</script>
+</body>
+</html>
